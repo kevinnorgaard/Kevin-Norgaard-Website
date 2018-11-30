@@ -1,0 +1,13 @@
+.navbar {
+  background: rgba(52, 203, 203, .1) !important;
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand {
+  color: #29a3a3;
+}
+
+.nav-link {
+  color: grey;
+  padding-left: 20px !important;
+}

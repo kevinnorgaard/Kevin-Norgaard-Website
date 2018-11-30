@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div id="mySidenav" class="sidenav">
+    <a class="closebtn" (click)="closeNav()">&times;</a>
+    <a routerLink="/about" (click)="selectRoute('About')">About</a>
+    <div class="white-line"></div>
+    <table>
+      <tr>
+        <td><a routerLink="/shop" (click)="selectRoute('Shop')">Shop</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a class="table-a" (click)="selectRoute('Lipstick')">Lipstick</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a class="table-a" (click)="selectRoute('Lotion')">Lotion</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a class="table-a" (click)="selectRoute('Bags')">Bags</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <div class="white-line"></div>
+    <a routerLink="/help" (click)="closeNav()">Help & Contact</a>
+    <a routerLink="/help" (click)="closeNav()">Buyer Protection</a>
+  </div>
+  <div id="header">
+    <i class="fa fa-user"></i>
+    <span class="header-title">{{currentRoute}}</span>
+    <span (click)="openNav()" class="header-btn">&#9776;</span>
+  </div>
+
+</div>

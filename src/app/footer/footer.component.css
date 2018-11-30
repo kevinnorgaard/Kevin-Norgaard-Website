@@ -1,0 +1,14 @@
+.wrapper {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-text {
+  color: rgba(0,0,0,0.3);
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+}

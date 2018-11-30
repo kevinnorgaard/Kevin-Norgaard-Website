@@ -1,0 +1,39 @@
+.sidebar {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  display: block;
+}
+
+.header {
+  display: none;
+}
+
+.cart {
+  display: block;
+}
+
+.footer {
+  display: none;
+}
+
+/*@media (min-width: 576px) {  }*/
+
+/*@media (min-width: 768px) {  }*/
+
+@media (min-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+  .cart {
+    display: none;
+  }
+  .footer {
+    display: block;
+  }
+}
+
+/*@media (min-width: 1200px) {  }*/
