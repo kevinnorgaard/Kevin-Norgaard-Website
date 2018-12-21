@@ -1,6 +1,7 @@
 .navbar {
-  background: rgba(52, 203, 203, .1) !important;
-  border-bottom: 1px solid white;
+  /* background: rgba(52, 203, 203, .1) !important; */
+  background: white;
+  border-bottom: 1px solid #29a3a3;
 }
 
 .navbar-brand {

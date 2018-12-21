@@ -1,1 +1,33 @@
 @import "~bootstrap/dist/css/bootstrap-grid.min.css";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-container {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.btn-buy, .btn-cart {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+.btn-buy {
+  background: #33cccc;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-cart {
+  background: lightgrey;
+  color: black;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

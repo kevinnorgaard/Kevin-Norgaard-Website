@@ -3,7 +3,7 @@
   bottom: 0;
   height: 40px;
   width: 100%;
-  background-color: #33cccc;
+  background-color: white;
   text-align: center;
   border-top: #29a3a3 1px solid;
   display: flex;
@@ -13,8 +13,8 @@
 .cart-counter-btn {
   border: none;
   width: 100%;
-  background-color: #33cccc;
-  color: white;
+  background-color: white;
+  color: #33cccc;
 }
 
 .fa-shopping-bag {
@@ -23,8 +23,8 @@
 
 .check-out-btn {
   width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
   background-color: #2eb8b8;
   border: 1px #2eb8b8 solid;
   border-bottom: none;
@@ -37,6 +37,6 @@
 .price-btn {
   border: none;
   width: 100%;
-  background-color: #33cccc;
-  color: white;
+  background-color: white;
+  color: #33cccc;
 }

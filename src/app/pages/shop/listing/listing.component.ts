@@ -9,6 +9,8 @@ import {QuickAddDialogComponent} from '../../../dialogs/quick-add-dialog/quick-a
 })
 export class ListingComponent implements OnInit {
   @Input() type: string;
+  @Input() name = 'Chubby Stick';
+  @Input() price = 19.99;
 
   constructor(public dialog: MatDialog) { }
 
@@ -18,7 +20,11 @@ export class ListingComponent implements OnInit {
   openQuickAdd() {
     const dialog = this.dialog.open(QuickAddDialogComponent, {
       height: '400px',
-      width: '600px'
+      width: '600px',
+      data: {
+        name: this.name,
+        price: this.price
+      }
     });
   }
 

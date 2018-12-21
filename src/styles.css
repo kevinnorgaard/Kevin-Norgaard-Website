@@ -1,3 +1,12 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 * {
   font-family: 'Muli', sans-serif;
+}
+
+body {
+  background: url("/assets/bokeh_portrait.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
