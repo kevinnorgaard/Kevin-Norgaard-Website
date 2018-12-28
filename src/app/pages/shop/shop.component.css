@@ -1,3 +1,87 @@
+@media (min-width: 576px) {
+  .title {
+    height: 464px;
+    line-height: 464px;
+    font-size: 10vw;
+  }
+  .listing-label {
+    font-size: 5vw;
+  }
+  .sale-label {
+    font-size: 7vw;
+  }
+  .img-fluid {
+    max-width: 85vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 6vw;
+  }
+  .listing-label {
+    font-size: 3vw;
+  }
+  .sale-label {
+    font-size: 5vw;
+  }
+  .img-fluid {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    height: 494px;
+    line-height: 494px;
+  }
+  .wrapper-list {
+    display: none;
+  }
+  .wrapper-grid {
+    display: block;
+  }
+  .label-container {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    top: 64px;
+  }
+  .img-fluid {
+    max-width: 50vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    height: 600px;
+    line-height: 600px;
+  }
+  .listing-label {
+    margin: auto;
+  }
+  .view-all-btn, .sale-view-all-btn {
+    display: none;
+  }
+  .listing-label {
+    font-size: 2vw;
+  }
+  .sale-label {
+    font-size: 3vw;
+  }
+  .img-fluid {
+    max-width: 40vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title {
+    height: 650px;
+    line-height: 650px;
+  }
+}
+
+/* ------------------------------------------------------ */
+
 .wrapper-list {
   padding-top: 46px;
   padding-bottom: 40px;
@@ -14,7 +98,6 @@
 
 .img-fluid {
   display: block;
-  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -29,15 +112,12 @@
   margin: auto 0 auto 20px;
   text-transform: uppercase;
   color: white;
-  font-size: 5vw;
   letter-spacing: 5px;
 }
 
 .sale-label {
   color: white;
-  font-size: 7vw;
   letter-spacing: 8px;
-
 }
 
 /* -------------------------------------------- */
@@ -53,7 +133,6 @@
   border-top-right-radius: 6px;
 
   position: sticky;
-  top: 46px;
   z-index: 1;
 }
 
@@ -143,7 +222,6 @@
 /* ------------------------------------------------------ */
 
 .wrapper-grid {
-  display: none;
   padding-top: 64px;
   padding-bottom: 40px;
   max-width: 960px;
@@ -151,76 +229,4 @@
   margin-left:  auto;
   padding-left: 3px;
   padding-right: 3px;
-}
-
-/* ------------------------------------------------------ */
-
-@media (min-width: 576px) {
-  .title {
-    height: 464px;
-    line-height: 464px;
-    font-size: 10vw;
-  }
-  .listing-label {
-    font-size: 5vw;
-  }
-  .sale-label {
-    font-size: 7vw;
-  }
-}
-
-@media (min-width: 768px) {
-  .title {
-    font-size: 6vw;
-  }
-  .listing-label {
-    font-size: 3vw;
-  }
-  .sale-label {
-    font-size: 5vw;
-  }
-}
-
-@media (min-width: 992px) {
-  .title {
-    height: 494px;
-    line-height: 494px;
-  }
-  .wrapper-list {
-    display: none;
-  }
-  .wrapper-grid {
-    display: block;
-  }
-  .label-container {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    top: 64px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .title {
-    height: 600px;
-    line-height: 600px;
-  }
-  .listing-label {
-    margin: auto;
-  }
-  .view-all-btn, .sale-view-all-btn {
-    display: none;
-  }
-  .listing-label {
-    font-size: 2vw;
-  }
-  .sale-label {
-    font-size: 3vw;
-  }
-}
-
-@media (min-width: 1400px) {
-  .title {
-    height: 650px;
-    line-height: 650px;
-  }
 }

@@ -18,12 +18,11 @@ export class ListingListComponent {
   }
 
   listingSize() {
-    const n: number = 10;
+    const n = 10;
     const arr = [];
     for (let i = 0; i < n; i++) {
       arr.push(i);
     }
-    console.log(JSON.parse(JSON.stringify(arr)));
     return arr;
   }
 }

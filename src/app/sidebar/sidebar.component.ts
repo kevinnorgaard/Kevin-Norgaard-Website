@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   currentRoute = 'Shop';
+  navOpen = true;
 
   constructor() { }
 
@@ -15,14 +16,15 @@ export class SidebarComponent implements OnInit {
 
   selectRoute(route: string) {
     this.currentRoute = route;
-    this.closeNav();
+    this.toggleNav();
   }
 
-  openNav() {
-    document.getElementById('mySidenav').style.width = '250px';
-  }
-
-  closeNav() {
-    document.getElementById('mySidenav').style.width = '0';
+  toggleNav() {
+    if (this.navOpen) {
+      document.getElementById('mySidenav').style.width = '250px';
+    } else {
+      document.getElementById('mySidenav').style.width = '0';
+    }
+    this.navOpen = !this.navOpen;
   }
 }

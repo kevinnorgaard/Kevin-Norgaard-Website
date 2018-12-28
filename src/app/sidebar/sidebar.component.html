@@ -1,6 +1,5 @@
 <div class="wrapper">
   <div id="mySidenav" class="sidenav">
-    <a class="closebtn" (click)="closeNav()">&times;</a>
     <a routerLink="/about" (click)="selectRoute('About')">About</a>
     <div class="white-line"></div>
     <table>
@@ -58,6 +57,6 @@
   <div id="header">
     <i class="fa fa-user"></i>
     <span class="header-title">{{currentRoute}}</span>
-    <span (click)="openNav()" class="header-btn">&#9776;</span>
+    <span (click)="toggleNav()" class="header-btn">&#9776;</span>
   </div>
 </div>

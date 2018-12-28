@@ -12,12 +12,11 @@ export class ListingGridComponent implements OnInit {
   }
 
   listingSize() {
-    const n: number = 4;
+    const n = 4;
     const arr = [];
     for (let i = 0; i < n; i++) {
       arr.push(i);
     }
-    console.log(JSON.parse(JSON.stringify(arr)));
     return arr;
   }
 }
