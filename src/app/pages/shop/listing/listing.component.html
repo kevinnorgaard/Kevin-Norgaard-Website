@@ -1,7 +1,7 @@
 <div class="wrapper" (click)="openQuickAdd()" [ngStyle]="{background: getBackgroundColor()}">
   <img class="listing-image"/>
   <div class="label-container">
-    <div class="price-label">$19.99</div>
-    <div class="name-label">Chubby Stick</div>
+    <div class="name-label" [ngStyle]="{'color': getTextColor()}">Chubby Stick</div>
+    <div class="price-label" [ngStyle]="{'color': getTextColor()}">$19.99</div>
   </div>
 </div>

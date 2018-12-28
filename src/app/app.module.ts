@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListingGridComponent } from './pages/shop/listing-grid/listing-grid.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     HelpComponent,
     QuickAddDialogComponent,
     ShoppingCartComponent,
-    FooterComponent
+    FooterComponent,
+    ListingGridComponent
   ],
   imports: [
     BrowserModule,

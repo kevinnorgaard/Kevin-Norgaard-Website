@@ -1,62 +1,115 @@
-.wrapper {
+.wrapper-list {
   padding-top: 46px;
   padding-bottom: 40px;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left:  auto;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .title {
   margin: 0;
-  letter-spacing: .8vw;
-  font-size: 10vw;
-  background: none;
-  /* background: url("/assets/bokeh.jpg"); */
-  width: 100%;
-  height: 250px;
-  line-height: 250px;
-  text-align: center;
-  /* background-position: right top;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-  color: rgba(52, 203, 203, .7);
-  color: white;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .category-container {
   border-radius: 8px;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .listing-label {
   margin: auto 0 auto 20px;
   text-transform: uppercase;
   color: white;
-  font-size: 20px;
+  font-size: 5vw;
   letter-spacing: 5px;
 }
 
 .sale-label {
   color: white;
-  font-size: 28px;
+  font-size: 7vw;
   letter-spacing: 8px;
 
 }
 
-.label-container, .sale-label-container {
+/* -------------------------------------------- */
+
+.label-container {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between;
   align-items: flex-start;
   letter-spacing: 1px;
   font-weight: 800 !important;
-  background: rgba(52, 203, 203, .7);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  position: sticky;
+  top: 46px;
+  z-index: 1;
 }
 
 .label-container {
   padding: 8px 0;
 }
 
+.travel-label-container {
+  background: rgb(230, 238, 240, .7);
+}
+
+.lips-label-container {
+  background: rgb(244, 214, 66, .7);
+}
+
+.face-label-container {
+  background: rgb(250, 205, 140, .7);
+}
+
+.eyes-label-container {
+  background: rgb(195, 144, 61, .7);
+}
+
+.cleanser-label-container {
+  background: rgb(230, 238, 240, .7);
+}
+
+.hydrating-label-container {
+  background: rgb(244, 214, 66, .7);
+}
+
+.restoring-label-container {
+  background: rgb(195, 144, 61, .7);
+}
+
+.fragrance-label-container {
+  background: rgb(156, 39, 91, .7);
+}
+
+.bags-label-container {
+  background: rgb(230, 238, 240, .7);
+}
+
 .sale-label-container {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  letter-spacing: 1px;
+  font-weight: 800 !important;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   background: none;
 }
+
+/* -------------------------------------------- */
 
 .view-all-btn, .sale-view-all-btn {
   height: 24px;
@@ -87,43 +140,81 @@
   color: white;
 }
 
+/* ------------------------------------------------------ */
+
+.wrapper-grid {
+  display: none;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left:  auto;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/* ------------------------------------------------------ */
+
 @media (min-width: 576px) {
   .title {
-    background: url("/assets/beach_rocks_mq_752w.jpg");
     height: 464px;
     line-height: 464px;
     font-size: 10vw;
   }
+  .listing-label {
+    font-size: 5vw;
+  }
+  .sale-label {
+    font-size: 7vw;
+  }
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
   .title {
     font-size: 6vw;
+  }
+  .listing-label {
+    font-size: 3vw;
+  }
+  .sale-label {
+    font-size: 5vw;
   }
 }
 
 @media (min-width: 992px) {
-  .wrapper {
-    padding-top: 0px;
-    padding-left: 200px;
-    padding-right: 200px;
-  }
   .title {
-    background: url("/assets/beach_rocks_mq_800w.jpg");
     height: 494px;
     line-height: 494px;
+  }
+  .wrapper-list {
+    display: none;
+  }
+  .wrapper-grid {
+    display: block;
+  }
+  .label-container {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    top: 64px;
   }
 }
 
 @media (min-width: 1200px) {
   .title {
-    background: url("/assets/beach_rocks_mq_1000w.jpg");
     height: 600px;
     line-height: 600px;
+  }
+  .listing-label {
+    margin: auto;
+  }
+  .view-all-btn, .sale-view-all-btn {
+    display: none;
+  }
+  .listing-label {
+    font-size: 2vw;
+  }
+  .sale-label {
+    font-size: 3vw;
   }
 }
 
@@ -131,6 +222,5 @@
   .title {
     height: 650px;
     line-height: 650px;
-    background: url("/assets/beach_rocks_mq_1200w.jpg");
   }
 }

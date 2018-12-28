@@ -19,7 +19,7 @@ export class ListingComponent implements OnInit {
 
   openQuickAdd() {
     const dialog = this.dialog.open(QuickAddDialogComponent, {
-      height: '400px',
+      height: '500px',
       width: '600px',
       data: {
         name: this.name,
@@ -30,8 +30,15 @@ export class ListingComponent implements OnInit {
 
   getBackgroundColor() {
     if (this.type === 'sale') {
-      return '#ffe6e6';
+      return '#9c275b';
     }
     return 'white';
+  }
+
+  getTextColor() {
+    if (this.type === 'sale') {
+      return 'white';
+    }
+    return 'black';
   }
 }

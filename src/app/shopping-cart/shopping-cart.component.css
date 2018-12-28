@@ -5,28 +5,29 @@
   width: 100%;
   background-color: white;
   text-align: center;
-  border-top: #29a3a3 1px solid;
+  border-top: #9c275b 1px solid;
   display: flex;
   justify-content: space-around;
+  z-index: 4;
 }
 
 .cart-counter-btn {
   border: none;
   width: 100%;
   background-color: white;
-  color: #33cccc;
+  color: #9c275b;
 }
 
 .fa-shopping-bag {
-  color: #29a3a3;
+  color: #9c275b;
 }
 
 .check-out-btn {
   width: 100%;
   /* border-top-left-radius: 8px;
   border-top-right-radius: 8px; */
-  background-color: #2eb8b8;
-  border: 1px #2eb8b8 solid;
+  background-color: #9c275b;
+  border: 1px #9c275b solid;
   border-bottom: none;
   color: white;
   font-size: 12px;
@@ -38,5 +39,5 @@
   border: none;
   width: 100%;
   background-color: white;
-  color: #33cccc;
+  color: #9c275b;
 }

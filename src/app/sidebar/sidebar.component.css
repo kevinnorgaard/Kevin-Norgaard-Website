@@ -1,12 +1,17 @@
+.wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   top: 0;
   left: 0;
   bottom: 0;
-  /* background-color: #33cccc; */
   background: white;
   overflow-x: hidden;
   transition: 0.5s;
@@ -17,7 +22,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
-  color: #33cccc;
+  color: #9c275b;
   display: block;
   transition: 0.3s;
 }
@@ -39,7 +44,7 @@
 .white-line {
   height: 1px;
   /* background: rgba(255,255,255,.3); */
-  background: #33cccc;
+  background: #9c275b;
   margin: 14px 32px;
 }
 
@@ -49,11 +54,11 @@
   padding: 0 10px;
   font-size: 30px;
   cursor: pointer;
-  /* background: #33cccc; */
   background: white;
   vertical-align: middle;
-  color: #33cccc;
-  border-bottom: #2eb8b8 1px solid;
+  color: #9c275b;
+  border-bottom: #9c275b 1px solid;
+  z-index: 4;
 }
 
 .header-title {

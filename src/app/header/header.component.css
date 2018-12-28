@@ -1,14 +1,23 @@
 .navbar {
   /* background: rgba(52, 203, 203, .1) !important; */
   background: white;
-  border-bottom: 1px solid #29a3a3;
+  border-bottom: 1px solid #9c275b;
+  height: 64px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }
 
 .navbar-brand {
-  color: #29a3a3;
+  color: #9c275b;
+  font-size: 28px;
 }
 
 .nav-link {
   color: grey;
   padding-left: 20px !important;
+  font-size: 22px;
 }
